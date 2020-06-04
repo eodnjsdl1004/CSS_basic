@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-family: cursive;} /* 전역 태그 선택 */
+        b {color:aqua;}/* 해당 태그만 선택 */
+        #c1{color:red;}/* 아이디 태그만 선택 */
+        .b1{color:green;}/* 클래스 태그만 선택 */
+    </style>
+
+    <style>
+        .abox p{color:purple;} /* 하위 모든 자식 태그만 선택 */
+    </style>
+
+<style>
+    .bbox > p{color:yellow;} /* 하위 직속 자식 태그만 선택 */
+</style>
+
+</head>
+<body>
+    
+    <b>태그 선택자</b>
+    <b>태그 선택자</b>
+    <b>태그 선택자</b>
+    <p id="c1">아이디 선택자</p>
+    <p id="c1">아이디 선택자</p>
+    <p class="b1">클래스 선택자</p>
+    <p class="b1">클래스 선택자</p>
+
+    <hr>
+
+    <div class="abox">
+        <p>하위 선택자</p>
+        <p>하위 선택자</p>
+        <ul>
+            <li><p>하위 선택자</p></li>
+            <li><p>하위 선택자</p></li>
+        </ul>
+    </div>
+
+    <div class="bbox">
+        <p>자식 선택자</p>
+        <p>자식 선택자</p>
+        <ul>
+            <li><p>하위 선택자</p></li>
+            <li><p>하위 선택자</p></li>
+        </ul>
+    </div>
+
+</body>
+</html>

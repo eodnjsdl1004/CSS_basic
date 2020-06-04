@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1, .b1{color:red;}
+        
+        /* ul li class="col-1"가 가지고 있는 기본 리스트 속성을 전부 제거 */
+        ul, li {list-style: none;}
+        li[class*="col"]{color:aqua}
+    </style>
+</head>
+<body>
+    <p class="p1">그룹</p>
+    <b class="b1">그룹</b>
+
+    <ul>
+        <!-- ctrl shift l 이름이 같은 친구들 다잡기또는 alt 마우스 -->
+        <li class="col-1">리스트</li class="col-1">
+        <li class="col-2">리스트</li class="col-1">
+        <li class="col-3">리스트</li class="col-1">
+        <li class="col-4">리스트</li class="col-1">
+    </ul>
+
+</body>
+</html>
