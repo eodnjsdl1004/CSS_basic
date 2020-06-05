@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*박스레이아웃을 잡기전에 전체 선택자로 기본요소들이 가지고 있는 마진을 없애고 시작*/
+        *{margin: 0px; padding: 0px;}
+        /*ul, li는  목록을 정의하는 태그인데 스타일을 초기값으로 지정*/
+        ul, li{list-style-type: none;}
+
+        .boxList{ overflow: hidden; background-color: aqua; margin: 0 auto; width: 50%;}
+        /*보더, 패딩, 위드를 더한값이 실제 요소의 길이*/
+        /*보더는 박스사이즈에 포함시키지 말도록 설정*/
+        .boxList div{float: left; border: 1px solid #777; width: 16.6666%; box-sizing: border-box; }
+        /*자식에서 float 속성을 이용해서 박스 위치를 조정하면, 부모의 높이 값이 지정되지 않는 현상을 다음과 같은 방법으로 제제한다.*/
+        /* .boxList::after{content: ""; display: block; clear: both;}  아니면 부모 태그속성에 overflow:hidden을 추가한다.*/
+    </style>
+
+    <style>
+        .box {width: 100px; height: 100px; background-color: aqua; overflow: auto;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="boxList">
+        <div>박스1</div>
+        <div>박스2</div>
+        <div>박스3</div>
+        <div>박스4</div>
+        <div>박스5</div>
+        <div>박스6</div>
+    </div>
+
+    <div class="box">
+        박스밖으로 나갈거얌
+        이야아아아아아아아아아아아아아아아아아아아아아아아아
+    </div>
+</body>
+</html>

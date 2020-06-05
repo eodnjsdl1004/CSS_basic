@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list > .inner{display: inline;}
+        .list > span, strong, small{display: block;}
+        .list > a{ display: inline-block; border: 1px solid #777; height: 50px; line-height: 50px; width: 100px; text-align: center;}
+        .box {display: none;}
+    </style>
+
+</head>
+<body>
+    <!-- 줄바꿈->인라인으로 변경, 옆으로 변경 -->
+    <div class ="list">
+        <div class="inner">블록</div>
+        <div class="inner">블록</div>
+        <div class="inner">블록</div>
+    </div>
+
+    <hr>
+
+    <!-- 인라인 -> 블록으로 변경, 줄바꿈이 일어남 -->
+    <div class="list">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <small>인라인</small>
+    </div>
+
+    <hr>
+
+    <!-- 정렬이나 크기는 block에서만 사용가능 -->
+    <!-- 인라인-블록은 줄바꿈은 일어나지 않으나 block 요소의 정렬기능이나, 크기를 지정할 수 있다 -->
+    <div class="list">
+        <a href="#"> 인라인블록</a>
+        <a href="#"> 인라인블록</a>
+        <a href="#"> 인라인블록</a>
+    </div>
+
+    <span class="box">
+        아이디 비밀번호를 확인하실래요?
+    </span>
+
+</body>
+</html>
