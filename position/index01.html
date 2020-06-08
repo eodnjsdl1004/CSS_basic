@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*기본 패딩 마진값을 0으로 초기화*/
+        *{margin: 0px; padding: 0px;}
+        .list{width: 50%; margin: 0 auto; border: 1px solid #777;}
+        /*position relative를 부모에 달아준다*/
+        .content{position: relative;}
+        p{border: 1px solid #777; height: 100px; }
+        .inner1{background-color: aqua;}
+        /*position absolute는 z축으로 떠오른다*/
+        .inner2{background-color: blueviolet; 
+                position: absolute; 
+                left: 20px; top: 20px; /*content(부모) 박스 기준으로 위치조정이 필요함*/
+                width: 50px; height: 50px;
+        }
+        .inner3{background-color: forestgreen;}
+        
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="content">
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+</body>
+</html>
