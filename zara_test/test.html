@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- 제이쿼리 추가 (순서 중요)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 가장 아래쪽에 개인 디자인을 추가 -->
+    <link rel="stylesheet" href="css/header2.css">
+
+    <style>
+        header {position: fixed; top:0; left:0; z-index: 15; width: 100%; border-radius: 0px;}
+        header h1 {text-align: center; font-size: 80px; background-color: white; margin: 0;}
+        .logo-box {position: relative;}
+        .logo-box .login-register {position: abxsolute; top: -80px; right: 50px; margin: 15px;}
+        .logo-box .login-register a {margin: 15px; color: #777;}
+        header .navbox {display: block;}
+        header .navbox li {display: inline;}
+        header .navbox li a {display: inline-block; color: white; padding: 0px 20px; margin: 0px 10px; transition: border 2s;}
+        header .navbox li:hover {border-bottom: 5px solid white;}
+        header .navbox {margin: 0px; padding: 0px; text-align: center;}
+        header .navbox a:hover{text-decoration: none;}
+
+        .main {position: relative; margin-top: 150px; margin-bottom: 50px; text-align: center;}
+        .main .main_text {position: absolute; top:50px; right: 300px; color: white;}
+        .main .main_text h2 {font-size: 40px; background: rgba(0,0,0,0.3); padding: 10px; margin-bottom: 5px;}
+        .main .main_text p {font-size: 15px; background: rgba(0,0,0,0.3); padding: 10px; margin-bottom: 5px;}
+        .main .main-image{width: 80%;}
+        
+        .contents-image .product {width: 250px;}
+        .contents-image .clearfix {text-align: center;}
+        .contents-image .clearfix h2 {font-size: 20px; color: #555;}
+        .contents-image .clearfix h3 {font-size: 15px; color: #555; display: inline;}
+
+        .aside-inner {position: relative;}
+        .contents ul li .hover-contents {position: absolute; left: 0;top: 0px; width: 100%; height: 100%; background-color: rgba(0,0,0,.8); opacity: 0;}
+        .contents ul li .hover-contents:hover {opacity: 1;}
+        .contents ul li .hover-contents a {color: white;}
+
+        .quick_area {position: fixed; top: 250px; right: 0; z-index: 5;}
+        .quick-list li {background-color: black; padding: 20px; border: 1px solid white; text-align: center;}
+        .quick-list li h4 {color: white;}
+        .quick-list li a {text-decoration: none; color: white; font-size: medium; letter-spacing: -2px; }
+        .quick-list li:hover {background-color: #777;}
+
+        @media (max-width: 767px) {
+            header h1 {font-size: 40px; background-color: white; margin: 0;}
+            header .navbox {text-align: left;}
+            header .navbox li {display: block; padding: 5px 0px;}
+            .quick_area{display: none;}
+            .main {position: relative; margin-top: 160px; margin-bottom: 50px; text-align: center;}
+            .main .main_text {position: absolute; top:10px; right: 100px; color: white;}
+            .main .main_text h2{font-size: 10px;}
+            .main .main_text p {font-size: 7.5px;}
+            .logo-box {position: relative;}
+            .logo-box .login-register {position: absolute; top: -50px; right: 10px;}
+            .logo-box .login-register a {margin: 5px; color: #777;}
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>ZARA</h1>
+        <div class="logo-box">
+            <ul class="login-register">
+                <a>LOGIN</a>
+                <a>REGISTER</a>
+            </ul>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="container-fluid">
+                    <ul class="navbox" style="padding: 15px 0px;">
+                        <li><a href="#">WOMEN</a></li>
+                        <li><a href="#">TRF</a></li>
+                        <li><a href="#">MAN</a></li>
+                        <li><a href="#">KID</a></li>
+                        <li><a href="#">EDITORIALS</a></li>
+                    </ul>
+                </div>
+            </div>   
+       
+        </nav>
+        
+    </header>
+
+    <aside class="quick_area">
+        <ul class="quick-list">
+            <li>
+                <h4>전화문의</h4>
+                <a href="">010-1234-5678</a>
+            </li>
+            <li>
+                <h4>카카오톡</h4>
+                <a href="">1:1상담</a>
+            </li>
+            <li>
+                <a href="">오시는길</a>
+            </li>
+        </ul>
+    </aside>
+
+    <section class="main">
+        <img src="img/main.jpg" alt class="main-image">
+        <div class="main_text">
+            <h2>Category Banner</h2>
+            <p>Upload image and description</p>
+            <p>Upload image and description</p>
+        </div>
+    </section>
+
+    <section class="contents">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_01.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_02.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_03.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_04.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_05.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_06.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_07.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 contents-image">
+                    <div class="aside-inner">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="img/img_08.jpg" alt class="product">
+                                <h2>Product with Varients</h2>
+                                <h3>"★★★☆☆ "</h3>
+                                <span class="red">2REVIEWS(S)</span><br>
+                                "$59.00"
+                                <div class="hover-contents">
+                                    <a href="">Jacket</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                 
+                  
+            </div>
+        </div>   
+    </section>
+</body>
+</html>

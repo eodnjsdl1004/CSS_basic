@@ -167,8 +167,126 @@
 .login-form{ margin: 0 auto; float: none;}
 .login-form form{box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); padding: 50px;} 
 
-@media(max-width: 767px;){.join-form form{padding: 5px 10px;}}
+@media(max-width: 767px){.join-form form{padding: 5px 10px;}}
 
-
+/* 마이페이지 */
 .form-control{ border-color: 1px solid #333; border-radius: 0px;}
 .form-control:focus{border-color: #555;}
+
+.myinfo{margin: 0 auto; float: none;}
+.tab-style{margin-bottom: 15px; background-color: #607D8B; border-radius: 0px;}
+
+.nav-tabs>li>a {
+  border: none;
+  border-radius: 0px;
+}        
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+    color: #333;
+    cursor: default;
+    background-color: rgb(7, 118, 138);
+    border: none;
+    border-bottom-color: transparent; 
+    border-radius: 0px;           
+}
+.nav-tabs>li.active>a:hover{
+  background-color: #340047;
+  border: none;
+  color: #eee;
+}
+.myinput{width: 200px;}
+.myinput2{width: 200px; display: inline-block;}
+
+
+.filebox label {
+    display: inline-block;
+    padding: 6px 10px;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #5cb85c;
+    cursor: pointer;
+    border: 1px solid #4cae4c;
+    border-radius: none;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.fileDiv {
+    height: 100px;
+    width: 200px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.section-inner {
+    background-color: white;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.title-inner {
+    position: relative;
+    padding: 15px 0;
+}
+
+.title-inner .profile {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.title-inner .title {
+    padding-left: 50px;
+}
+.title p {
+    margin: 0px;
+}
+.like-inner img {
+    width: 20px;
+    height: 20px;
+}
+
+.like-inner {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+.link-inner {
+    overflow: hidden;
+    padding: 10px 0;
+}
+.link-inner span {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+.aside-inner {
+    position: fixed;
+    top: 70px;
+    width: 180px;
+}
+.menu1{ 
+  font-weight: bold;
+}
+.menu2{
+  font-weight: bold;
+}
+
+.content-inner {
+    padding: 10px 0px;
+}
